@@ -16,6 +16,13 @@
 		logEvent(analytics, 'goes to map crafter');
 		goto('/GodotMapcrafterDocs');
 	};
+
+	const goToSecondsSinceBirth = () => {
+		const analytics = getAnalytics();
+		logEvent(analytics, 'goes to seconds since birth');
+		goto('/SecondsSinceBirth');
+	};	
+
 </script>
 
 <div class="navbar bg-accent">
@@ -25,6 +32,7 @@
 	<div class="flex-none rounded-lg">
 		<ul class="menu menu-horizontal px-1 rounded-lg">
 			<li><a onclick={goToMapCrafter} href="/GodotMapcrafterDocs">Godot Mapcrafter Docs</a></li>
+			<li><a onclick={goToSecondsSinceBirth} href="/SecondsSinceBirth">Seconds Since Birth</a></li>
 			<!-- <li>
 				<details class="shadow-lg rounded-lg">
 					<summary>Extra</summary>
