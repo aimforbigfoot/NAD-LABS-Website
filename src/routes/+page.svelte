@@ -9,6 +9,7 @@
 	import FaTwitter from 'svelte-icons/fa/FaTwitter.svelte';
 	import GiGamepad from 'svelte-icons/gi/GiGamepad.svelte';
 	import FaGooglePlay from 'svelte-icons/fa/FaGooglePlay.svelte';
+	import bskySvg from '../../src/lib/images/Bluesky_Logo.svg.png';
 </script>
 
 <div class="hero bg-base-200 min-h-screen">
@@ -111,19 +112,22 @@
 				</div>
 				<div class="flex">
 					<div class="w-6 ml-16 mr-2">
-						<FaInstagram />
+						<div class="">
+							<img src={bskySvg} alt="Bluesky Logo" class="w-6 h-6" />
+						</div>
 					</div>
-					<div class="badge m-auto">@ad.nad.science</div>
+					<div class="badge m-auto">
+						<a target="_blank" href="https://bsky.app/profile/nadlabs.xyz"> @nadlabs.xyz</a>
+					</div>
 				</div>
 				<div class="flex">
 					<div class="w-12 ml-16 mr-2 text-sm flex">
 						<div class="w-6">
 							<FaTwitter />
 						</div>
-						<p class="m-auto">X</p>
+						<p class="m-auto">/ X</p>
 					</div>
-
-					<div class="badge m-auto">@boimses</div>
+					<div class="badge m-auto"><a target="_blank" href="https://x.com/naddylabs">@naddylabs</a></div>
 				</div>
 			</div>
 			<p class="text-sm">I won't gaurenttee to respond but I'll be likely to see it</p>
