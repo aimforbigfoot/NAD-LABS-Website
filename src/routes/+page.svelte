@@ -1,15 +1,13 @@
 <script>
-	import GenerationFunctions from '../lib/comps/docsComps/GenerationFuncPage.svelte';
-	import MainFooter from '../lib/comps/genComps/MainFooter.svelte';
-	import MainPage from '../lib/comps/docsComps/FrontPageOfGodotDocs.svelte';
-	let mouseEnterEmail = $state(false);
 	import FaDiscord from 'svelte-icons/fa/FaDiscord.svelte';
+	import FaGooglePlay from 'svelte-icons/fa/FaGooglePlay.svelte';
 	import FaReddit from 'svelte-icons/fa/FaReddit.svelte';
-	import FaInstagram from 'svelte-icons/fa/FaInstagram.svelte';
 	import FaTwitter from 'svelte-icons/fa/FaTwitter.svelte';
 	import GiGamepad from 'svelte-icons/gi/GiGamepad.svelte';
-	import FaGooglePlay from 'svelte-icons/fa/FaGooglePlay.svelte';
 	import bskySvg from '../../src/lib/images/Bluesky_Logo.svg.png';
+	import MainFooter from '../lib/comps/genComps/MainFooter.svelte';
+
+	let mouseEnterEmail = $state(false);
 </script>
 
 <div class="hero bg-base-200 min-h-screen">
@@ -42,7 +40,7 @@
 				<p class="text-xl my-auto">Godot Mapcrafter</p>
 				<a href="/GodotMapcrafterDocs" class="btn btn-primary ml-auto">Docs</a>
 			</div>
-			<div class="flex">
+			<div class="flex min-w-96">
 				<p class="text-xl my-auto">Google Play</p>
 
 				<a
@@ -57,8 +55,10 @@
 			</div>
 			<div class="flex">
 				<p class="text-xl my-auto">Steam</p>
-				<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="btn btn-primary ml-auto"
-					>Coming Soon 😳</a
+				<a
+					href="https://store.steampowered.com/app/3614410/Poking_Ghosts/"
+					target="_blank"
+					class="btn btn-primary ml-auto">Poking Ghosts Coming Soon 😳</a
 				>
 			</div>
 			<div class="flex">
@@ -83,18 +83,16 @@
 		}}
 	>
 		<div class="text-7xl font-bold p-2 rounded-lg">
-			<h1>Contact?</h1>
-			<div class="block m-1 p-1">
-				<div class="flex">
-					<h2 class="text-lg">Electronic mail?</h2>
-					<small class="text-xs ml-auto my-auto">(hover to reveal)</small>
+			<div class="flex flex-row">
+				<h1 class="my-auto">Contact?</h1>
+				<div class="text-sm flex flex-col my-auto ml-4">
+					<p>realnadlabs@gmail.com</p>
+					<p>or</p>
+					<p>contact@nadlabs.xyz</p>
 				</div>
-				{#if mouseEnterEmail}
-					<p class="text-sm text-center w-full select-all">realnadlabs AT google mail dot com</p>
-					<p class="text-sm text-center w-full">to prevent bots ofc</p>
-					<div class="divider"></div>
-				{/if}
-
+			</div>
+			<div class="block text-center">
+				<div class="flex"></div>
 				<div class="flex">
 					<h2 class="text-lg">Social Media?</h2>
 				</div>
@@ -127,10 +125,11 @@
 						</div>
 						<p class="m-auto">/ X</p>
 					</div>
-					<div class="badge m-auto"><a target="_blank" href="https://x.com/naddylabs">@naddylabs</a></div>
+					<div class="badge m-auto">
+						<a target="_blank" href="https://x.com/naddylabs">@naddylabs</a>
+					</div>
 				</div>
 			</div>
-			<p class="text-sm">I won't gaurenttee to respond but I'll be likely to see it</p>
 		</div>
 	</div>
 </div>

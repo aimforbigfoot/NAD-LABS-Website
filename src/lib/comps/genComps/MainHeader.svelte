@@ -1,28 +1,13 @@
 <script>
-	import { firebaseConfig } from '$lib/firebase/firebaseConfig.js';
 	import { goto } from '$app/navigation';
-	import { getAnalytics } from 'firebase/analytics';
-	import { logEvent } from 'firebase/analytics';
-
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		const analytics = getAnalytics();
-		logEvent(analytics, 'page_view');
-	});
 
 	const goToMapCrafter = () => {
-		const analytics = getAnalytics();
-		logEvent(analytics, 'goes to map crafter');
 		goto('/GodotMapcrafterDocs');
 	};
 
 	const goToSecondsSinceBirth = () => {
-		const analytics = getAnalytics();
-		logEvent(analytics, 'goes to seconds since birth');
 		goto('/SecondsSinceBirth');
-	};	
-
+	};
 </script>
 
 <div class="navbar bg-accent">
