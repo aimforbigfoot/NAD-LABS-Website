@@ -14,6 +14,7 @@
 			Providing tutorials and games since 2014
 		</p>
 		<p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+		<a class="link link-hover" href="/privacy">Privacy Policy</a>
 	</aside>
 	<nav>
 		<div class="grid grid-flow-col gap-4">
